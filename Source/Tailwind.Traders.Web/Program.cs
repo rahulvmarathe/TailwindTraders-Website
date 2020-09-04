@@ -16,6 +16,10 @@ namespace Tailwind.Traders.Web
         {
             CreateWebHostBuilder(args).Build().Run();
         }
+        
+        public static void testFunc()
+        {
+        }
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
