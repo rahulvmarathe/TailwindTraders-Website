@@ -17,7 +17,7 @@ namespace Tailwind.Traders.Web
             CreateWebHostBuilder(args).Build().Run();
         }
         
-        public static void testFunc()
+        public static void testFunc1()
         {
         }
 
