@@ -23,9 +23,9 @@ steps:
   displayName: 'Build an image'
   inputs:
     azureSubscriptionEndpoint: $(azureSubscription)
-    azureContainerRegistry: $(acr).azurecr.io
+    azureContainerRegistry: rahulvmarathe.azurecr.io
     dockerFile: Source/Tailwind.Traders.Web/Dockerfile
-    arguments: '-t $(acr).azurecr.io/$(ImageName):$(Build.BuildId)'
+    arguments: '-t rahulvmarathe.azurecr.io/$(ImageName):$(Build.BuildId)'
     imageName: '$(ImageName):$(Build.BuildId)'
     includeLatestTag: true
 
@@ -33,6 +33,6 @@ steps:
   displayName: 'Push Image'
   inputs:
     azureSubscriptionEndpoint: $(azureSubscription)
-    azureContainerRegistry: '$(acr).azurecr.io'
+    azureContainerRegistry: 'rahulvmarathe.azurecr.io'
     command: 'Push an image'
     imageName: '$(ImageName):$(Build.BuildId)'
